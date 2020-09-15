@@ -12,6 +12,37 @@ pinMode(腳位模式, INPUT/OUTPUT) </p>
 電路圖如下: </p>
 ![image](https://github.com/Weng-yi/ARDOUINO/blob/master/A4BB146F-B086-493C-8548-44850737F47A.jpeg) </p>
 ```C++
+
+```
+第三個程式 功能LED由左至右逐一亮滅,功能如下</p>
+初始狀態 ○○○○</p>
+STEP1   ●○○○</p>
+STEP2   ○●○○</p>
+STEP3   ○○●○</p>
+STEP4   ○○○●</p>
+電路配置圖如下:</p>
+
+
+
+
+
+
+
+第四個程式 功能LED由左至右逐一亮滅,功能如下</p>
+初始狀態 ○○○○○○○○</p>
+STEP1   ●○○○○○○○</p>
+STEP2   ○●○○○○○○</p> 
+STEP3   ○○●○○○○○</p>
+STEP4   ○○○●○○○○</p>
+STEP5   ○○○○●○○○</p>
+STEP6   ○○○○○●○○</p>
+STEP7   ○○○○○○●○</p>
+STEP8   ○○○○○○○●</p>
+STEP9 回到初始值狀態
+電路配置圖如下
+
+程式碼如下:</p>
+```C++
 int LED=9;
 void setup() {
  
@@ -32,6 +63,4 @@ void loop() {
 
 delay(500);
 }
-
-
 ```
