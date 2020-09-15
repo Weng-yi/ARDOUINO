@@ -44,9 +44,6 @@ delay(100);
 }
 ```
 
-
-
-
 第四個程式 功能LED由左至右逐一亮滅,功能如下</p>
 初始狀態 ○○○○○○○○</p>
 STEP1   ●○○○○○○○</p>
@@ -58,8 +55,6 @@ STEP6   ○○○○○●○○</p>
 STEP7   ○○○○○○●○</p>
 STEP8   ○○○○○○○●</p>
 STEP9 回到初始值狀態
-
-
 程式碼如下:
 ```C++
 int LED=9;
@@ -86,3 +81,39 @@ delay(500);
 ---
 電路配置圖如下:
 ![image](https://github.com/Weng-yi/ARDOUINO/blob/master/5AFD3FC0-DE91-446C-A8E5-BE80FF31FE46.jpeg) </p>
+
+加分題目 初始狀態○○○○○○○○</p>
+STEP1   ○○○○○○○●</p>
+STEP2   ○○○○○○●○</p> 
+STEP3   ○○○○○●○○</p>
+STEP4   ○○○○●○○○</p>
+STEP5   ○○○●○○○○</p>
+STEP6   ○○●○○○○○</p>
+STEP7   ○●○○○○○○</p>
+STEP8   ●○○○○○○○</p>
+STEP9 回到初始值狀態
+程式碼如下:
+```C++
+ int LED=1;
+void setup() {
+ 
+  for (int i=2 ;i<10;i++)
+ {
+   pinMode(i,OUTPUT);
+   digitalWrite(i,1);
+}
+}
+
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  for(int i=1;i<10; i++)
+{
+    digitalWrite(i,0);
+   delay(100);
+      digitalWrite(i,1);
+}
+```
+呼吸燈:
+
+}
