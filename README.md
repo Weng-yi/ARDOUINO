@@ -114,6 +114,24 @@ void loop() {
       digitalWrite(i,1);
 }
 ```
-呼吸燈:
-
+類比輸出的方式為analogWRITE(角位,值)</p>
+腳位必須是要有在Arduino UNO版上有"~"符號</p>
+值可填入0-255</p>
+請實作出呼吸燈的程式</p>
+呼吸燈的功能從暗到亮在到暗的循環 每隔100mS變換亮度
+程式碼如下:
+```C++
+ int value=255; int x=-15;
+void setup() {
+   //put your setup code here, to run once:
+ pinMode(3,OUTPUT);
 }
+
+void loop() {
+  // put your main code here, to run repeatedly:
+if (value<=0|| value>=255) x=-x;
+analogWrite(3,value);
+delay(30);
+value=value-x; 
+}
+```
