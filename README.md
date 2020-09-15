@@ -20,10 +20,29 @@ STEP1   ●○○○</p>
 STEP2   ○●○○</p>
 STEP3   ○○●○</p>
 STEP4   ○○○●</p>
-電路配置圖如下:</p>
+程式碼如下:
+```C++
+ int LED=9;
+void setup() {
+ 
+  for (int i=2 ;i<6;i++)
+   pinMode(i,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  for(int i=6;i>1; i--)
+    digitalWrite(i,HIGH);
+   if (LED>=2)
+      digitalWrite(LED,LOW);
+   else
+      LED=6;
+  LED--;  
 
 
-
+delay(100);
+}
+```
 
 
 
