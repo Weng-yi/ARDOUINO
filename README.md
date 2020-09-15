@@ -10,4 +10,6 @@ pinMode(腳位模式, INPUT/OUTPUT)
 -------------------------------------------
 第一個程式:功能LED閃爍0.5秒,暗0.5秒
 電路圖如下:
-![image](https://github.com/Weng-yi/ARDOUINO/blob/master/A4BB146F-B086-493C-8548-44850737F47A.jpeg)
+！[image] （https://github.com/Weng-yi/ARDOUINO/blob/master/A4BB146F-B086-493C-8548-44850737F47A.jpeg）
+```C++
+```
