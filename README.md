@@ -39,7 +39,7 @@ STEP6   ○○○○○●○○</p>
 STEP7   ○○○○○○●○</p>
 STEP8   ○○○○○○○●</p>
 STEP9 回到初始值狀態
-電路配置圖如下
+
 
 程式碼如下:</p>
 ```C++
@@ -65,5 +65,5 @@ delay(500);
 }
 ```
 ---
-
+電路配置圖如下<>
 ![image](https://github.com/Weng-yi/ARDOUINO/blob/master/5AFD3FC0-DE91-446C-A8E5-BE80FF31FE46.jpeg) </p>
