@@ -10,6 +10,28 @@ pinMode(腳位模式, INPUT/OUTPUT)
 -------------------------------------------
 第一個程式:功能LED閃爍0.5秒,暗0.5秒
 電路圖如下:
-！[image] （https://github.com/Weng-yi/ARDOUINO/blob/master/A4BB146F-B086-493C-8548-44850737F47A.jpeg）
+！[image] (https://github.com/Weng-yi/ARDOUINO/blob/master/A4BB146F-B086-493C-8548-44850737F47A.jpeg)
 ```C++
+int LED=9;
+void setup() {
+ 
+  for (int i=2 ;i<10;i++)
+   pinMode(i,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  for(int i=10;i>1; i--)
+    digitalWrite(i,HIGH);
+   if (LED>=2)
+      digitalWrite(LED,LOW);
+   else
+      LED=10;
+  LED--;  
+
+
+delay(500);
+}
+
+
 ```
