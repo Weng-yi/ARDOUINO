@@ -135,3 +135,5 @@ delay(30);
 value=value-x; 
 }
 ```
+電路配置圖如下:
+![image]() </p>
