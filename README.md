@@ -137,3 +137,85 @@ value=value-x;
 ```
 電路配置圖如下:
 ![image]() </p>
+
+第五個程式:
+
+程式碼如下:
+```C++
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(2,INPUT);
+  pinMode(3,OUTPUT);
+  digitalWrite(3,HIGH);
+  
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+if(digitalRead(2)==0)
+digitalWrite(3,LOW);
+}
+```
+電路配置圖如下:
+![image]() </p>
+
+第六個程式:
+
+程式碼如下:
+```C++
+int a=0;
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(2,INPUT);
+  pinMode(3,OUTPUT);
+  digitalWrite(3, HIGH);
+  //Serial.begin(9600);
+}
+
+void loop(){
+  //put your code here, to run repeatedly:
+
+if(digitalRead(2)==0);
+{
+  while (digitalRead(2)==0);
+  //Serial.print(digitalRead(2));
+  a=(a+1)%2;
+}
+  //Serial.print(digitalRead(2));
+  //Serial.print(a);
+  switch(a)
+  {case 1:
+  {digitalWrite(3,HIGH);}
+  case 0:
+  {digitalWrite(3,HIGH);}}
+}
+```
+電路配置圖如下:
+![image]() </p>
+int value=0;
+void setup() 
+{  // put your setup code here, to run once:
+  pinMode(2,INPUT);
+  pinMode(3,OUTPUT);
+  digitalWrite(3, HIGH);
+  
+}
+
+void loop(){
+  
+if(digitalRead(2)==0);
+{
+  while (digitalRead(2)==0){
+ delay(30);//Wait for 20 millisecond(s)
+  }
+ if(value==0){
+  value=1;
+  digitalWrite(3,LOW);
+ }else{
+  value=0;
+  digitalWrite(3,HIGH);
+ }
+}
+}
+ 
