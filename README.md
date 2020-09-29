@@ -219,3 +219,66 @@ if(digitalRead(2)==0);
 }
 }
  
+第六個程式:
+int tig = 0;
+int i = 0;
+int s1 = 0;
+
+void setup()
+{
+  pinMode(2, INPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(10, OUTPUT);
+  for (i = 3; i <= 10; i += 1) {
+      digitalWrite(i, HIGH);
+    }
+}
+void loop()
+{
+  if (tig == 0) {
+
+      for (i = 3; i <= 10; i += 1) {
+        digitalWrite(i, LOW);
+        delay(500);
+        digitalWrite(i, HIGH);
+        subd( ) ;
+      }
+    
+  }
+  if (tig == 1) {
+ 
+      for (i = 10; i >= 3; i -= 1) {
+        digitalWrite(i, LOW);
+        delay(500);
+        digitalWrite(i, HIGH);
+        subd( ) ;
+      }
+    
+  }
+  if (tig == 2) {
+   
+    for (i = 3; i <= 10; i += 1) {
+      digitalWrite(i, HIGH);
+      subd( ) ;
+    }
+  }
+  subd( ) ;
+}
+
+void subd( ){
+    while (digitalRead(2) == 0) {
+      while (digitalRead(2) == 0) {
+        delay(40); 
+      }
+      tig += 1;
+      if (tig >= 3) {
+        tig = 0;
+      }
+    } 
+ }
