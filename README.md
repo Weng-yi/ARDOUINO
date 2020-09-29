@@ -220,6 +220,7 @@ if(digitalRead(2)==0);
 }
  
 第六個程式:
+C++
 int tig = 0;
 int i = 0;
 int s1 = 0;
@@ -282,3 +283,4 @@ void subd( ){
       }
     } 
  }
+```
