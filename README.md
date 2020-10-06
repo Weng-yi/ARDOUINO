@@ -166,7 +166,7 @@ void loop() {
       digitalWrite(i,1);
 }
 ```
-類比輸出的方式為analogWRITE(角位,值)</p>
+●類比輸出的方式為analogWRITE(角位,值)</p>
 腳位必須是要有在Arduino UNO版上有"~"符號</p>
 值可填入0-255</p>
 請實作出呼吸燈的程式</p>
