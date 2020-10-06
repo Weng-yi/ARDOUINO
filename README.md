@@ -30,6 +30,7 @@ delay(500);
 
 第二個程式:</p>
 程式碼如下:</p>
+```C++
 int LED=6;
 void setup() {
   for (int i=2 ;i<6;i++)
