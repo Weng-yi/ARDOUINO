@@ -62,7 +62,7 @@ void loop() {
 }
 ```
 電路配置圖如下:</p>
-![image](
+![image](https://github.com/Weng-yi/ARDOUINO/blob/master/7E85F0BB-DD5F-4B9D-A66D-3A6EBC667674.jpeg)</p>
 
 第三個程式: 功能LED由左至右逐一亮滅</p>
 功能如下:</p>
