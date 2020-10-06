@@ -25,8 +25,8 @@ delay(500);
 }
 
 ```
-電路圖如下：</ p>
-電路配置圖如下：</ p>
+電路圖如下：</p>
+電路配置圖如下：</p>
 ！[image]_(https://github.com/Weng-yi/ARDOUINO/blob/master/A499BC15-8BCD-4081-97AA-54D8223D6D29.jpeg)</p>
 
 第二個程式:</p>
