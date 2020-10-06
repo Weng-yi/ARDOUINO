@@ -284,6 +284,7 @@ void subd( ){
     } 
  }
 ```
+```C++
 int tig=0;
 void setup() {
   // put your setup code here, to run once:
@@ -336,3 +337,4 @@ void blue(){
   analogWrite(2,255);
   sub();
 }
+```
