@@ -8,7 +8,7 @@ pinMode(腳位模式, INPUT/OUTPUT) </p>
 腳位INPUT時,初始職狀態為1 </p>
 腳位OUTPUT時,初始職狀態為0 </p>
 ------------------------------------------- </p>
-第一個程式:功能LED閃爍0.5秒,暗0.5秒 </p>
+●第一個程式:功能LED閃爍0.5秒,暗0.5秒 </p>
 程式碼如下:</p>
 ```C++
 oid setup() {
@@ -25,10 +25,10 @@ delay(500);
 }
 
 ```
-電路圖如下：</p>
 電路配置圖如下：</p>
 ![image](https://github.com/Weng-yi/ARDOUINO/blob/master/A499BC15-8BCD-4081-97AA-54D8223D6D29.jpeg)</p>
-第二個程式:</p>
+
+●第二個程式:</p>
 程式碼如下:</p>
 ```C++
 int LED=6;
@@ -64,7 +64,7 @@ void loop() {
 電路配置圖如下:</p>
 ![image](https://github.com/Weng-yi/ARDOUINO/blob/master/7E85F0BB-DD5F-4B9D-A66D-3A6EBC667674.jpeg)</p>
 
-第三個程式: 功能LED由左至右逐一亮滅</p>
+●第三個程式: 功能LED由左至右逐一亮滅</p>
 功能如下:</p>
 初始狀態 ○○○○</p>
 STEP1   ●○○○</p>
@@ -89,14 +89,13 @@ void loop() {
    else
       LED=6;
   LED--;  
-
-
 delay(100);
 }
 ```
 電路配置圖如下:</p>
 ![image](https://github.com/Weng-yi/ARDOUINO/blob/master/32199309-DA14-4527-BAAF-E083C25DC007.jpeg)</p>
-第四個程序功能LED由左至右逐一亮滅</ p>
+
+●第四個程序功能LED由左至右逐一亮滅</ p>
 功能如下:</p>
 初始狀態 ○○○○○○○○</p>
 STEP1   ●○○○○○○○</p>
@@ -131,11 +130,10 @@ void loop() {
 delay(500);
 }
 ```
-
 電路配置圖如下:
 ![image](https://github.com/Weng-yi/ARDOUINO/blob/master/5AFD3FC0-DE91-446C-A8E5-BE80FF31FE46.jpeg) </p>
 
-加分題目:</p>
+●加分題目:</p>
 初始狀態○○○○○○○○</p>
 STEP1   ○○○○○○○●</p>
 STEP2   ○○○○○○●○</p> 
@@ -190,7 +188,7 @@ value=value-x;
 }
 ```
 
-第五個程式:
+●第五個程式:
 
 
 程式碼如下:
@@ -210,7 +208,7 @@ if(digitalRead(2)==0)
 digitalWrite(3,LOW);
 }
 ```
-第六個程式:
+●第六個程式:
 
 程式碼如下:
 ```C++
@@ -267,7 +265,7 @@ if(digitalRead(2)==0);
 }
 }
  
-第六個程式:
+●第七個程式:
 ```C++
 int tig = 0;
 int i = 0;
