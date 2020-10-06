@@ -26,7 +26,7 @@ delay(500);
 
 ```
 電路圖如下: </p>
-![image]() </p>
+![image](https://github.com/Weng-yi/ARDOUINO/commit/de6623d61952d36fad290db96a51a88fb28f91dd) </p>
 
 第二個程式:</p>
 程式碼如下:</p>
