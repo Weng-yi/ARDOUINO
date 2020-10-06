@@ -94,7 +94,7 @@ delay(100);
 }
 ```
 電路配置圖如下:</p>
-！[image] （https://github.com/Weng-yi/ARDOUINO/blob/d3faad3cdbbbc82409c1ad8766360640079e5b9a/32199309-DA14-4527-BAAF-E083C25DC007.jpeg） </ p>
+！[image] () </ p>
 第四個程序功能LED由左至右逐一亮滅</ p>
 功能如下:</p>
 初始狀態 ○○○○○○○○</p>
