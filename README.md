@@ -28,6 +28,40 @@ delay(500);
 電路圖如下: </p>
 ![image](https://github.com/Weng-yi/ARDOUINO/blob/master/A4BB146F-B086-493C-8548-44850737F47A.jpeg) </p>
 
+第二個程式:</p>
+程式碼如下:</p>
+int LED=6;
+void setup() {
+  for (int i=2 ;i<6;i++)
+  pinMode (i, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  for (int i=5; i>1; i--)
+    digitalWrite(i,HIGH);
+  if (LED>=2)
+    digitalWrite(LED,LOW);
+  else
+    LED=6;
+  LED--;
+
+ delay (500);
+}
+void loop() {
+  // put your main code here, to run repeatedly:
+  for (int i=5; i>1; i--)
+    digitalWrite(i,HIGH);
+  if (LED>=2)
+    digitalWrite(LED,LOW);
+  else
+    LED=6;
+  LED--;
+ delay (500);
+}
+```
+
+
 第三個程式: 功能LED由左至右逐一亮滅</p>
 功能如下:</p>
 初始狀態 ○○○○</p>
