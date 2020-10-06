@@ -135,10 +135,9 @@ delay(30);
 value=value-x; 
 }
 ```
-電路配置圖如下:
-![image]() </p>
 
 第五個程式:
+
 
 程式碼如下:
 ```C++
@@ -159,7 +158,6 @@ digitalWrite(3,LOW);
 ```
 電路配置圖如下:
 ![image]() </p>
-
 第六個程式:
 
 程式碼如下:
@@ -191,8 +189,6 @@ if(digitalRead(2)==0);
   {digitalWrite(3,HIGH);}}
 }
 ```
-電路配置圖如下:
-![image]() </p>
 int value=0;
 void setup() 
 {  // put your setup code here, to run once:
