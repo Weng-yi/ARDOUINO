@@ -9,18 +9,33 @@ pinMode(腳位模式, INPUT/OUTPUT) </p>
 腳位OUTPUT時,初始職狀態為0 </p>
 ------------------------------------------- </p>
 第一個程式:功能LED閃爍0.5秒,暗0.5秒 </p>
-電路圖如下: </p>
-![image](https://github.com/Weng-yi/ARDOUINO/blob/master/A4BB146F-B086-493C-8548-44850737F47A.jpeg) </p>
+程式碼如下:</p>
 ```C++
+oid setup() {
+  // put your setup code here, to run once:
+PinMode(3,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+digitalWrite(3,LOW);
+delay(500);
+digitalWrite(3,HIGH);
+delay(500);
+}
 
 ```
-第三個程式 功能LED由左至右逐一亮滅,功能如下</p>
+電路圖如下: </p>
+![image](https://github.com/Weng-yi/ARDOUINO/blob/master/A4BB146F-B086-493C-8548-44850737F47A.jpeg) </p>
+
+第三個程式: 功能LED由左至右逐一亮滅</p>
+功能如下:</p>
 初始狀態 ○○○○</p>
 STEP1   ●○○○</p>
 STEP2   ○●○○</p>
 STEP3   ○○●○</p>
 STEP4   ○○○●</p>
-程式碼如下:
+程式碼如下:</p>
 ```C++
  int LED=9;
 void setup() {
@@ -44,7 +59,8 @@ delay(100);
 }
 ```
 
-第四個程式 功能LED由左至右逐一亮滅,功能如下</p>
+第四個程式 功能LED由左至右逐一亮滅</p>
+功能如下:</p>
 初始狀態 ○○○○○○○○</p>
 STEP1   ●○○○○○○○</p>
 STEP2   ○●○○○○○○</p> 
@@ -55,7 +71,7 @@ STEP6   ○○○○○●○○</p>
 STEP7   ○○○○○○●○</p>
 STEP8   ○○○○○○○●</p>
 STEP9 回到初始值狀態
-程式碼如下:
+程式碼如下:</p>
 ```C++
 int LED=9;
 void setup() {
@@ -82,7 +98,8 @@ delay(500);
 電路配置圖如下:
 ![image](https://github.com/Weng-yi/ARDOUINO/blob/master/5AFD3FC0-DE91-446C-A8E5-BE80FF31FE46.jpeg) </p>
 
-加分題目 初始狀態○○○○○○○○</p>
+加分題目:</p>
+初始狀態○○○○○○○○</p>
 STEP1   ○○○○○○○●</p>
 STEP2   ○○○○○○●○</p> 
 STEP3   ○○○○○●○○</p>
@@ -156,8 +173,6 @@ if(digitalRead(2)==0)
 digitalWrite(3,LOW);
 }
 ```
-電路配置圖如下:
-![image]() </p>
 第六個程式:
 
 程式碼如下:
